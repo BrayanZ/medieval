@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.authors     = ["Brayan Zuniga"]
   s.email       = 'brayan@pernix.cr'
   s.files       = ["lib/medieval.rb", "lib/medieval/core.rb", "lib/medieval/wrappers.rb", "lib/medieval/matchers.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/medieval'
+  s.homepage    = 'http://rubygems.org/gems/medieval'
+  s.executables = ["medieval"]
 end

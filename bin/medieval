@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'medieval'
+
+folder = ARGV[0] ? ARGV[0] : "spec"
+
+Dir.foreach(folder) do |file|
+  if file.end_with? "_spec.rb"
+    puts folder + "/" + file
+  end
+end
+
