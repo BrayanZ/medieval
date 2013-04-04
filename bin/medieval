@@ -4,9 +4,9 @@ require 'medieval'
 
 folder = ARGV[0] ? ARGV[0] : "spec"
 
-Dir.foreach(folder) do |file|
+Dir[Dir.pwd + "/#{folder}/**/*.rb"].each do |file| 
   if file.end_with? "_spec.rb"
-    puts folder + "/" + file
+    puts file
+    require file
   end
 end
-
